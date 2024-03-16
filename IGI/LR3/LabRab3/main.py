@@ -27,7 +27,13 @@ def menu():
 
     while True:
         print('-' * 80)
-        choice = int_parse('1. Task 1\n2. Task 2\n3. Task 3\n4. Task 4\n5. Task 5\n6. Exit')
+        print('Enter a number to choose task, you want to test\n')
+        choice = int_parse('1. Calculate arcsin with given accuracy\n'
+                           '2. Loop, which inputs integer numbers and calculates maximum of them. 1 - end of loop\n'
+                           '3. Calculate amount of non-space symbols\n'
+                           '4. Work with text\n'
+                           '5. Find product of two elements with odd indexes and total sum of all elements between first and last zero positions\n'
+                           '6. Exit\n')
         print('-' * 80)
         if choice == 1:
             try:
