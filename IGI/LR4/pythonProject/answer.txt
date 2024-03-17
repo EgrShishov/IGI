@@ -1,0 +1,13 @@
+Amount of sentences in the text: 8
+Amount of narrative. sentences in the text: 0
+Amount of interrogative? sentences in the text: 0
+Amount of exclamation! sentences in the text: 0
+Amount of words in text: 80
+Average length of words in sentences: 4.8875
+Average len of sentences in words: 0
+Amount of smiles: 7
+All capital letters in text: ['E', 'P', 'E', 'T', 'T', 'B', 'C', 'P', 'P']
+Amount of words, with less than 5 characters: 49
+The shortest word, which ends with "d": and
+All words, sorted in reverse len order : ['comprehension', 'comprehension', 'understanding', 'Practicing', 'vocabulary', 'evaluation', 'beginners', 'practice', 'designed', 'progress', 'containt', 'characte', 'English', 'reading', 'written', 'English', 'improve', 'grammar', 'develop', 'instant', 'exclaim', 'online', 'giving', 'texts', 'brrrz', 'order', 'texts', 'below', 'while', 'Could', 'going', 'bzzz', 'zear', 'free', 'your', 'will', 'both', 'your', 'word', 'help', 'your', 'This', 'text', 'some', 'word', 'with', 'less', 'then', 'want', 'tell', 'what', 'fuck', 'Push', 'Push', 'for', 'bez', 'and', 'and', 'for', 'and', 'and', 'The', 'are', 'you', 'you', 'may', 'But', 'you', 'the', 'to', 'of', 'of', 'to', 'an', 'of', 'to', 'me', 'is', 'on', 'i']
+Changed text: ["English texts for dddeginners to practice dddez dddrrrz dddzzz zear reading and comprehension online and for free. Practicing your comprehension of written English will dddoth improve your vocadddulary and understanding of grammar and word order. The texts dddelow are designed to help you develop while giving you an instant evaluation of your progress. This text, may containt some word with less then 5 characte. But i want to exclaim! Could you tell me what the fuck is going on? Push! Push! ':) ;) :-------((( ;--) ;(((( :((( ::::(( :[[[  :("]
