@@ -44,9 +44,14 @@ def analyze_text(text: str):
     result_str = ""
 
     sentences_amount = len(re.findall(r'([.?!])', text))
-    nar_amount = 0
-    inter_amount = 0
-    excl_amount = 0
+
+    narrative = re.split(r'(?<!\w\.\w.)(?<![A-Z][a-z]\.)(?<=\.|\?|\!)\s', text)
+    questions = [sentence for sentence in narrative if '?' in sentence]
+    excl = [sentence for sentence in narrative if '!' in sentence]
+
+    nar_amount = len(narrative)
+    inter_amount = len(questions)
+    excl_amount = len(excl)
 
     words = re.findall(r'\b[A-z]+\b', text)
     print(f'words: {words}')
@@ -57,7 +62,6 @@ def analyze_text(text: str):
 
     ave_sentence_len = 0
 
-    #separete sentences
     result_str += (f'Amount of sentences in the text: {sentences_amount}\n') #
     result_str += (f'Amount of narrative. sentences in the text: {nar_amount}\n') #
     result_str += (f'Amount of interrogative? sentences in the text: {inter_amount}\n') #
@@ -74,7 +78,6 @@ def analyze_text(text: str):
     result_str += (f'All capital letters in text: {capital_letters}\n')
 
     count_less_5 = len(list(re.findall(r'\b[A-z]{1,4}\b', text)))
-    #result_str += (list(re.findall(r'\b[A-z]{1,4}\b', text)))
     result_str += (f'Amount of words, with less than 5 characters: {count_less_5}\n')
 
     shortest_words = list(re.findall(r'\b[A-z]+d\b', text))
@@ -87,7 +90,7 @@ def analyze_text(text: str):
     words.sort(reverse=True, key=len)
     result_str += (f'All words, sorted in reverse len order : {words}\n')
 
-    text = re.sub(r'(p*)(b+)(c*)', 'ddd', text) #doesnt work
+    text = re.sub(r'(p*)(b+)(c*)', 'ddd', text) #fix later
     result_str += (f'Changed text: {text}\n')
 
     return result_str
